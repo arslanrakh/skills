@@ -9,6 +9,7 @@ taste lies. These skills carry that part and leave the method to the agent.
 | Skill | Say | What you get |
 |---|---|---|
 | forge | "create skill" | Stop repeating yourself: your way of working becomes a skill, or one line if that is enough |
+| evolve | "evolve" | Stop settling for the first answer: anything is pushed further through adversarial rounds, measured or not |
 
 ## Install
 
