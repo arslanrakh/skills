@@ -1,27 +1,21 @@
 # skills
 
-Agent skills by Arslan, written for agents that keep getting smarter.
+Get better work out of any agent, even ones far smarter than today's.
 
-A skill should exist only if it gives an agent what even one ten times
-smarter could not work out alone: your intent, your rules and why they
-exist, context it cannot see. A skill that adds nothing should not exist.
-As agents improve, a skill that stops adding anything gets removed.
+A smarter agent needs less telling how, but it still cannot guess what you want,
+how you like to work, or where your taste lies. These skills carry that part and
+leave the method to the agent.
 
-A skill says what is wanted, never how to do it, so it does not hold a
-smarter agent back.
+## Skills
 
-## forge
-
-Turns your practice into a skill by these same rules. Say "create skill"
-at the end of a session where you explained how you want something done.
-
-If most of it is what any expert does, or it always applies, forge writes
-no skill. It offers a one-line standing instruction instead and names every
-rule the line drops. You choose.
+| Skill | Say | What you get |
+|---|---|---|
+| forge | "create skill" | Stop repeating yourself: your way of working becomes a skill, or one line if that is enough |
 
 ## Install
 
-Pick one method per agent. Using two gives you every skill twice.
+All skills as one plugin, or single skills with `npx skills`. Pick one method per
+agent: using both gives you every skill twice.
 
 **Claude Code**
 
@@ -29,8 +23,7 @@ Pick one method per agent. Using two gives you every skill twice.
 claude plugin install arslanrakh --marketplace arslanrakh/skills
 ```
 
-To update automatically: `/plugin` → Marketplaces → arslanrakh →
-Enable auto-update.
+To update automatically: `/plugin` → Marketplaces → arslanrakh → Enable auto-update.
 
 **Codex**
 
@@ -49,13 +42,20 @@ grok plugin install arslanrakh/skills
 
 Update with `grok plugin update`.
 
-**Any other agent, or a single skill**
+**Any other agent, or single skills**
 
 ```bash
-npx skills@latest add arslanrakh/skills --skill forge -g
+npx skills@latest add arslanrakh/skills --list
+npx skills@latest add arslanrakh/skills --skill <name> -g
 ```
 
 Update with `npx skills@latest update`.
+
+## What belongs here
+
+A skill states principles and leaves the method to the agent. What a good agent
+already does unprompted does not belong here, and a skill that stops adding
+anything gets removed.
 
 ## License
 

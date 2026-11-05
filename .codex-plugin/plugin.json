@@ -1,19 +1,28 @@
 {
   "name": "arslanrakh",
   "version": "0.0.1",
-  "description": "Agent skills by Arslan. Starts with forge, which turns your practice into a skill.",
-  "author": { "name": "Arslan", "url": "https://github.com/arslanrakh" },
+  "description": "Get better work out of any agent, even ones far smarter than today's.",
+  "author": {
+    "name": "Arslan",
+    "url": "https://github.com/arslanrakh"
+  },
   "homepage": "https://github.com/arslanrakh/skills",
   "repository": "https://github.com/arslanrakh/skills",
   "license": "MIT",
-  "keywords": ["skills", "skill-creation"],
+  "keywords": [
+    "skills",
+    "agent-skills"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "arslanrakh skills",
-    "shortDescription": "Turn your practice into a skill",
+    "shortDescription": "Get better work out of any agent",
     "developerName": "Arslan",
     "category": "Developer Tools",
-    "capabilities": ["Read", "Write"],
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
     "websiteURL": "https://github.com/arslanrakh/skills"
   }
 }

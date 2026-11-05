@@ -1,8 +1,15 @@
 {
   "name": "arslanrakh",
-  "owner": { "name": "Arslan", "url": "https://github.com/arslanrakh" },
-  "description": "Agent skills by Arslan.",
+  "owner": {
+    "name": "Arslan",
+    "url": "https://github.com/arslanrakh"
+  },
+  "description": "Get better work out of any agent, even ones far smarter than today's.",
   "plugins": [
-    { "name": "arslanrakh", "source": "./", "description": "Agent skills by Arslan. Starts with forge." }
+    {
+      "name": "arslanrakh",
+      "source": "./",
+      "description": "Get better work out of any agent, even ones far smarter than today's."
+    }
   ]
 }
