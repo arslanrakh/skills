@@ -1,11 +1,8 @@
 # skills
 
-Frontier skills for autonomous agent work: agents get further, with less of you.
-
-Short, sharp principles for smart models, built on the best current methods and
-tested on real agents. A smarter agent needs less telling how, but it still
-cannot guess what you want, how you like to work, or where your taste lies.
-These skills carry that part and leave the method to the agent.
+Agents keep getting smarter, so telling them how matters less every month. What
+they still cannot guess is what you want, how you like to work, and where your
+taste lies. These skills carry that part and leave the method to the agent.
 
 ## Skills
 
@@ -54,9 +51,8 @@ Update with `npx skills@latest update`.
 
 ## What belongs here
 
-A skill states principles and leaves the method to the agent. What a good agent
-already does unprompted does not belong here, and a skill that stops adding
-anything gets removed.
+Every skill is tested on real agents. What a good agent already does unprompted
+does not belong here, and a skill that stops adding anything gets removed.
 
 ## License
 
