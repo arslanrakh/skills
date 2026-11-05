@@ -4,12 +4,12 @@
     "name": "Arslan",
     "url": "https://github.com/arslanrakh"
   },
-  "description": "Get better work out of any agent, even ones far smarter than today's.",
+  "description": "Frontier skills for autonomous agent work: agents get further, with less of you.",
   "plugins": [
     {
       "name": "arslanrakh",
       "source": "./",
-      "description": "Get better work out of any agent, even ones far smarter than today's."
+      "description": "Frontier skills for autonomous agent work: agents get further, with less of you."
     }
   ]
 }

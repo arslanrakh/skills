@@ -1,10 +1,11 @@
 # skills
 
-Get better work out of any agent, even ones far smarter than today's.
+Frontier skills for autonomous agent work: agents get further, with less of you.
 
-A smarter agent needs less telling how, but it still cannot guess what you want,
-how you like to work, or where your taste lies. These skills carry that part and
-leave the method to the agent.
+Short, sharp principles for smart models, built on the best current methods and
+tested on real agents. A smarter agent needs less telling how, but it still
+cannot guess what you want, how you like to work, or where your taste lies.
+These skills carry that part and leave the method to the agent.
 
 ## Skills
 

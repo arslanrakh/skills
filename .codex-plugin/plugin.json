@@ -1,7 +1,7 @@
 {
   "name": "arslanrakh",
   "version": "0.0.1",
-  "description": "Get better work out of any agent, even ones far smarter than today's.",
+  "description": "Frontier skills for autonomous agent work: agents get further, with less of you.",
   "author": {
     "name": "Arslan",
     "url": "https://github.com/arslanrakh"
@@ -16,7 +16,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "arslanrakh skills",
-    "shortDescription": "Get better work out of any agent",
+    "shortDescription": "Frontier skills for autonomous agent work",
     "developerName": "Arslan",
     "category": "Developer Tools",
     "capabilities": [
