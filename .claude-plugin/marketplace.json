@@ -1,0 +1,8 @@
+{
+  "name": "arslanrakh",
+  "owner": { "name": "Arslan", "url": "https://github.com/arslanrakh" },
+  "description": "Agent skills by Arslan.",
+  "plugins": [
+    { "name": "arslanrakh", "source": "./", "description": "Agent skills by Arslan. Starts with forge." }
+  ]
+}

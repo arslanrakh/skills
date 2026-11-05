@@ -1,0 +1,49 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      DISABLE_TELEMETRY: "1"
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+
+      - name: Manifests are valid
+        run: npx -y @anthropic-ai/claude-code@latest plugin validate --strict .
+
+      - name: Every skill is discoverable
+        run: |
+          listed=$(npx -y skills@latest add . --list)
+          for dir in skills/*/; do
+            name=$(basename "$dir")
+            grep -q "$name" <<<"$listed" || { echo "not discovered: $name"; exit 1; }
+          done
+
+      - name: Versions agree
+        run: |
+          claude=$(jq -r .version .claude-plugin/plugin.json)
+          codex=$(jq -r .version .codex-plugin/plugin.json)
+          [ "$claude" = "$codex" ] || { echo "versions differ: $claude, $codex"; exit 1; }
+
+      - name: Skill changes bump the version
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          git cat-file -e "$BASE^{commit}" 2>/dev/null || exit 0
+          git diff --quiet "$BASE" HEAD -- skills && exit 0
+          old=$(git show "$BASE:.claude-plugin/plugin.json" | jq -r .version)
+          new=$(jq -r .version .claude-plugin/plugin.json)
+          [ "$old" != "$new" ] || { echo "skills changed but version is still $new"; exit 1; }
