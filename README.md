@@ -10,11 +10,11 @@ anything gets removed.
 
 ## Skills
 
-| Skill | Say | What you get |
+| Skill | Say | What it does |
 |---|---|---|
-| [forge](skills/forge/SKILL.md) | "create skill" | Stop repeating yourself: your way of working, and nothing else, becomes a skill, or one line if that is enough |
-| [evolve](skills/evolve/SKILL.md) | "evolve" | Stop settling for the first answer: adversarial rounds push anything further, measured or not, and agreement proves nothing |
-| [land](skills/land/SKILL.md) | "land" | Stop watching over changes: one goes past the merge to working for its users while you are away, or you get told what only a person can do |
+| [forge](skills/forge/SKILL.md) | "create skill" | Turns the way you work into a skill your agent can follow. If one line in your agent's instructions is enough, it gives you that instead. |
+| [evolve](skills/evolve/SKILL.md) | "evolve" | Improves code, a UI or anything else in rounds: some agents change it, others look for real problems, and the best version stays. |
+| [land](skills/land/SKILL.md) | "land" | Finishes a change while you are away: not just merged, but seen working for its users. Anything only a person can do, it reports back. |
 
 ## Install
 
