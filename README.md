@@ -1,4 +1,4 @@
-# skills
+# Skills for Frontier Models
 
 Agent skills, not runbooks. The bet is that each new model needs less telling
 how, and still cannot guess what you want, how you like to work, or where your
