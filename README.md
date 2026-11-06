@@ -1,21 +1,24 @@
 # skills
 
-Agents keep getting smarter, so telling them how matters less every month. What
-they still cannot guess is what you want, how you like to work, and where your
-taste lies. These skills carry that part and leave the method to the agent.
+Agent skills, not runbooks. The bet is that each new model needs less telling
+how, and still cannot guess what you want, how you like to work, or where your
+taste lies.
+
+So a skill here fits on one screen: the standard and the limits. What a good
+agent already does unprompted does not belong here, and a skill that stops adding
+anything gets removed.
 
 ## Skills
 
 | Skill | Say | What you get |
 |---|---|---|
-| forge | "create skill" | Stop repeating yourself: your way of working becomes a skill, or one line if that is enough |
-| evolve | "evolve" | Stop settling for the first answer: anything is pushed further through adversarial rounds, measured or not |
-| land | "land" | Stop watching over changes: one goes all the way to working where its users get it while you are away, or tells you exactly what it needs |
+| [forge](skills/forge/SKILL.md) | "create skill" | Stop repeating yourself: your way of working, and nothing else, becomes a skill, or one line if that is enough |
+| [evolve](skills/evolve/SKILL.md) | "evolve" | Stop settling for the first answer: adversarial rounds push anything further, measured or not, and agreement proves nothing |
+| [land](skills/land/SKILL.md) | "land" | Stop watching over changes: one goes past the merge to working for its users while you are away, or you get told what only a person can do |
 
 ## Install
 
-All skills as one plugin, or single skills with `npx skills`. Pick one method per
-agent: using both gives you every skill twice.
+Pick one method per agent: mixing them installs skills twice.
 
 **Claude Code**
 
@@ -37,7 +40,7 @@ Updates itself at startup.
 **Grok Build**
 
 ```bash
-grok plugin install arslanrakh/skills
+grok plugin install arslanrakh/skills --trust
 ```
 
 Update with `grok plugin update`.
@@ -45,17 +48,11 @@ Update with `grok plugin update`.
 **Any other agent, or single skills**
 
 ```bash
-npx skills@latest add arslanrakh/skills --list
-npx skills@latest add arslanrakh/skills --skill <name> -g
+npx skills@latest add arslanrakh/skills -g
 ```
 
-Update with `npx skills@latest update`.
-
-## What belongs here
-
-Every skill is tested on real agents. What a good agent already does unprompted
-does not belong here, and a skill that stops adding anything gets removed.
+Add `--skill <name>` for a single skill. Update with `npx skills@latest update`.
 
 ## License
 
-MIT
+[MIT](LICENSE)
