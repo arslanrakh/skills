@@ -10,6 +10,7 @@ taste lies. These skills carry that part and leave the method to the agent.
 |---|---|---|
 | forge | "create skill" | Stop repeating yourself: your way of working becomes a skill, or one line if that is enough |
 | evolve | "evolve" | Stop settling for the first answer: anything is pushed further through adversarial rounds, measured or not |
+| land | "land" | Stop watching over changes: one goes all the way to working where its users get it while you are away, or tells you exactly what it needs |
 
 ## Install
 
