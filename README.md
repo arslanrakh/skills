@@ -12,9 +12,12 @@ anything gets removed.
 
 | Skill | Say | What it does |
 |---|---|---|
-| [forge](skills/forge/SKILL.md) | "create skill" | Turns the way you work into a skill your agent can follow. If one line in your agent's instructions is enough, it gives you that instead. |
-| [evolve](skills/evolve/SKILL.md) | "evolve" | Improves code, a UI or anything else in rounds: some agents change it, others look for real problems, and the best version stays. |
-| [land](skills/land/SKILL.md) | "land" | Finishes a change while you are away: not just merged, but seen working for its users. Anything only a person can do, it reports back. |
+| [to-explainer](skills/to-explainer/SKILL.md) | "to-explainer" | Makes a document about a system, idea or decision that people get at a glance and can retell. Pictures first, the business before the details, in the form the reader needs. |
+| [hill-climb](skills/hill-climb/SKILL.md) | "hill-climb" | Improves code, a UI or anything else in rounds: some agents change it, others look for real problems, and the best version stays. |
+| [to-skill](skills/to-skill/SKILL.md) | "to-skill" | Turns the way you work into a skill your agent can follow. If one line in your agent's instructions is enough, it gives you that instead. |
+| [ship-afk](skills/ship-afk/SKILL.md) | "ship-afk" | Finishes a change while you are away: not just merged, but seen working for its users. Anything only a person can do, it reports back. |
+
+Each skill runs when you say its name, for example "to-explainer how our payments work" or "hill-climb the landing page to the top 1% for UX".
 
 ## Install
 

@@ -1,6 +1,6 @@
 ---
-name: evolve
-description: Push anything further through adversarial rounds, measured or not, such as code, feature logic, UX, UI or taste. Use when the user says "evolve".
+name: hill-climb
+description: Trigger this if the user says 'hill-climb'.
 ---
 
 Improve whatever was asked, measured or not, as far as the budget allows.

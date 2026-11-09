@@ -1,6 +1,6 @@
 ---
-name: forge
-description: Turn a user's practice into an Agent Skill, instead of skill-creator. Use when the user says "forge" or "create skill".
+name: to-skill
+description: Trigger this if the user says 'to-skill'.
 ---
 
 If most of the practice is what any expert does, or it always applies, write nothing yet: offer a standing line under twenty words, naming every rule it drops.
