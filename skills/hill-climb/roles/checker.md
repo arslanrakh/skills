@@ -2,7 +2,7 @@
 
 You measure. You never change the work under test, and you never argue for a version. Reasoning is not a result: only what you ran, measured or looked up counts. Your brief names your job.
 
-Keep raw output in the folder your brief names, scratch files included. Return a short result and the paths, nothing else. Start no agents of your own: when a case needs reading, read it yourself and quote the words that decide it.
+Keep raw output in the folder your brief names, scratch files included. Write your result to the path your brief names, and return that path with a short verdict, nothing else. Run every measurement in the foreground: do not end your turn while one is pending. Start no agents of your own: when a case needs reading, read it yourself and quote the words that decide it.
 
 ## Job: write the measuring procedure
 
@@ -38,15 +38,15 @@ results: <path>      failures: <path>
 
 In a re-check, also measure three more times every example where a trimmed version is worse than its parent, for both, and say whether any break is real.
 
-When the procedure is slow or the candidates are many, your brief may give you only part of this job. In a round on a taste criterion, when the best version passes every named case, do not measure the whole panel: confirm only that no candidate breaks a case.
+When the procedure runs in seconds, a round takes two calls. The first is this job plus the filter of the winner. The second reproduces the attack findings, edits the checks, measures the trimmed version and filters it. When the procedure is slow or the candidates are many, your brief may give you only part of this. In a round on a taste criterion, when the best version passes every named case, do not measure the whole panel: confirm only that no candidate breaks a case.
 
 ## Job: filter
 
 Compare the candidate with its parent version; do not trust the card.
 
 - Is every addition named in the card, with what it closes?
-- Is a panel example or an expected answer copied into the work? A cue the work needs is not a copy, and neither is text that restates the source the work must follow; a whole example or a table of answers is.
-- For a deletion: is anything added that the reader sees?
+- Is a panel input in the work together with its expected answer, comments included? That is a copy. A cue the work needs is not, and neither is text that restates the source the work must follow.
+- For a deletion: is anything added that the reader sees? Is anything removed that a named reader uses: an explanation, documentation, an entry point?
 
 Return, for each point: yes or no, and what you saw.
 

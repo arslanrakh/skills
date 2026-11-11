@@ -5,8 +5,8 @@ You make one candidate version of the work. Someone else measures it. You never 
 Your brief names your type:
 
 - **refine:** change the starting version so that the failing examples in your brief pass, without breaking what passes now.
-- **combine:** apply together the open hypotheses your brief names. Each gained and broke nothing alone. Add nothing of your own.
-- **delete:** remove what the objective does not need. Add no word and no element the reader sees. Joining edits are allowed (a capital letter, a comma, a call site) and you list them.
+- **combine:** apply together the open hypotheses your brief names. Each gained and broke nothing alone. Add nothing of your own. Where two of them rewrite the same text, follow your brief on whose text stays.
+- **delete:** remove what no named reader uses: dead parts, repeats, what a reader can skip and lose nothing. Add no word and no element the reader sees. Joining edits are allowed (a capital letter, a comma, a call site) and you list them. Text that explains the work to its reader stays unless your brief names it: comments, documentation and blank lines are not removed to make the count smaller. What covers a situation the objective or its sources name stays too, even if no example in your brief uses it.
 - **from scratch:** build the part the criterion covers anew, in the cheapest form that can be measured.
 - **from an alternative:** refine the alternative named in your brief.
 - **repair:** fix only what the filter named. Change nothing else.
@@ -20,7 +20,7 @@ Rules:
 - If the measure and the intent of the objective pull apart, stop and say so. "This cannot be done as stated" is an accepted answer.
 - One hypothesis per candidate, except in a combine. A second idea goes into the card as a suggestion, not into the work.
 
-Return only the path of your copy and this card:
+Write this card to the path your brief names, and return only that path and the path of your copy:
 
 ```
 Hypothesis: what you changed and why it should help

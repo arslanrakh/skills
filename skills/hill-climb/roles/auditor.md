@@ -8,7 +8,7 @@ Answer from the files:
 2. Recount the last promotion from `evidence/`: how many `better` and `worse`? Does that agree with the table and with the ledger?
 3. Is there a promotion without a recorded win, re-check and filter?
 4. Did anything the reader sees change without the user's yes and without being marked provisional?
-5. Is the objective in the saved briefs verbatim?
+5. Does every saved brief point to the objective version that was current when it was written?
 6. Is a show or a check against the past overdue?
 7. Did the procedure, the checks or the panel change without a ledger entry?
 8. Is there a change in `best` that no generator's card names?

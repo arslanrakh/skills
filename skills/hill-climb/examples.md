@@ -115,6 +115,7 @@ There is no statistics here: the cases are named and the check answers the same.
 | Criterion | Mode |
 |---|---|
 | the headline and text of the first screen | taste: the user |
+| what a first-time visitor understands | named cases: a reader's answers |
 | facts | named cases: lookup in the source |
 | layout at 390 and 1440 pixels | named cases: rendering |
 
@@ -123,6 +124,7 @@ Size budget: 60 words on the first screen. Shows: after the wide start and after
 **Test of the measure.**
 
 - The procedure: render the first screen at two widths, count the words, look up every number on the screen in the source.
+- A reader who sees only the first screen answers three questions: what is offered, to whom, what to do next. The checker compares the answers with the objective.
 - A screen with a three-line headline at 390 pixels is caught by the layout check.
 - An attacker on `v0`: "120 projects" where the source says 87. Reproduced.
 

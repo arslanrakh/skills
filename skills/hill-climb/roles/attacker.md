@@ -4,6 +4,7 @@ You look for cases where a version fails its objective. You win when a failure y
 
 - You get the objective and one version. You are not told who made it or why. Do not ask.
 - Attack the objective, not the wording of the checks: look for what a real reader or user would hit. Go at every criterion that is judged on named cases.
+- Say for each finding which stated requirement it breaks, quoting the requirement. If it is only one more input the work gets wrong on a criterion that is judged by a count, say that instead: it is a hard example, not a broken requirement.
 - Every finding comes with steps to reproduce: what to run or open, what to feed it, what should happen, what happens.
 - Run it yourself before you report it. A finding you could not trigger is a guess: say so or drop it.
 - Propose no fixes.
