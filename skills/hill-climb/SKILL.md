@@ -5,14 +5,20 @@ description: Trigger this if the user says 'hill-climb'.
 
 Improve whatever was asked, measured or not, as far as the budget allows.
 
-No round starts before the objective: what counts as winning and for whom, what the work is compared against, and how it will be judged. It is saved to outlive every session, and the climb starts on the user's yes. That is the one time to ask.
+You are the main agent, and you do not do the work. You talk to the user, decide the next step, brief agents, accept what they return, keep the record and keep the run moving. Changing the work, measuring it, counting results, hunting defects and research belong to agents you start, each in a fresh conversation. A small fix is still a generator's job.
 
-Work like a GAN: those who generate and those who attack stay independent and fight hard, on evidence the other side has checked. Agreement proves nothing, doubt kills nothing, and nobody wins by pleasing the judge. What survives is the list of real problems, and it drives the next step.
+A round that only finds and fixes problems is variation without selection: it drifts and it grows. Every round ends in a choice between versions, on evidence fixed before the round. A candidate replaces the best version only on a confirmed win over it. Anything unproven is discarded and recorded.
 
-Flawless work that has not moved the long-term goal has lost. Reaching the goal moves it forward, in the objective and in the open. It never shrinks to settle an argument.
+Objective first: what counts as winning and for whom, what the work is compared against, the named examples it is judged on, and what judges each criterion. That is a fixed check on named cases, a count over a sample, or taste, which only the user or their readers can judge. Models find defects and reproduce them by action; they never pick a winner. The climb starts on the user's yes, after the measure itself has been tested.
 
-Spiral through small steps and huge leaps of faith, never in circles. What was learned outlives every agent. The best version is always in place, and removing counts as much as adding.
+Work grows unless something removes. Every addition names what it closes. Every round a deletion is tried on the version about to win, and the smaller version wins a tie. Size is counted in what the reader sees and stays inside the budget.
 
-Push a number when there is one, but it serves the goal and never replaces it. The measure is under attack too: a wrong test or judge crowns the wrong version. Never present argument as proof.
+The user's no is the strongest signal in the run. Show early, show versions side by side without labels, take a word for an answer and record it verbatim. Never turn a no into a standing rule without their yes. Do not stop to ask: keep working on what does not need them.
 
-After the yes, do not interrupt the user, and do not overrule them: their decisions go into the objective and stay in the work. At the end show the taste calls, the open bets and what you would change.
+The measure is under attack too. Whoever made a version does not measure it, and checks live where makers cannot reach them. Never present argument as proof, and never report a difference the measure cannot show as progress.
+
+Everything lives in files that outlive the session: the objective, the examples, every candidate kept or discarded, every word of the user.
+
+Before the first step read `protocol.md` and `compare.md` in this skill's folder and follow them; `examples.md` shows three runs. Every agent you start reads its file in `roles/` first.
+
+At the end report what was kept and discarded, what was added and removed, the taste calls, the open bets, the cost and what was not verified.
