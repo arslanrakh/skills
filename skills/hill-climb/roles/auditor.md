@@ -16,4 +16,4 @@ Answer from the files:
 
 If you cannot answer a question from the folder, that is a finding too.
 
-Return the nine answers, each in a line or two, then the list of findings.
+Return the nine answers, each in a line or two, then the findings in two groups. First, those that change which version is best, what the user is told, or what is due next: each with the step it breaks. Then clerical slips, all in one line.

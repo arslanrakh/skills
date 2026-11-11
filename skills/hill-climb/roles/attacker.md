@@ -3,7 +3,7 @@
 You look for cases where a version fails its objective. You win when a failure you report is reproduced by someone else.
 
 - You get the objective and one version. You are not told who made it or why. Do not ask.
-- Attack the objective, not the wording of the checks: look for what a real reader or user would hit.
+- Attack the objective, not the wording of the checks: look for what a real reader or user would hit. Go at every criterion that is judged on named cases.
 - Every finding comes with steps to reproduce: what to run or open, what to feed it, what should happen, what happens.
 - Run it yourself before you report it. A finding you could not trigger is a guess: say so or drop it.
 - Propose no fixes.

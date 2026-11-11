@@ -39,8 +39,8 @@ Hypothesis: the model confuses a refund with a wrong charge; it needs a rule tha
 Added: one rule, 45 words (closes 9 failures with this confusion)      Removed: nothing
 Prediction: tickets 3, 7, 12, 19, 23, 31, 40, 44, 52 will be fixed; the rest will not change.
 Size: 410 → 455 words      Cost: none
-Filter: passed
 Measured: better 9, worse 1; no other criteria
+Filter: passed
 Re-check: better 8, worse 1; outside the prediction one ticket, same cause
 Decision: the trimmed version of 1a is promoted, 281 words, because the win held and the trimmed version is no worse
 ```
@@ -50,13 +50,13 @@ The user gets a show that does not stop the loop: one rule added, six points rem
 In this round the main agent changed nothing, measured nothing and counted nothing. It:
 
 1. chose the criterion and handed out two briefs;
-2. accepted the cards and sent the candidates to a checker for the filter and the measurement;
-3. received the counts and verdicts: 9 / 1 win, 5 / 3 not proven;
-4. ordered the deletion from 1a and the re-check;
+2. saved the cards and sent both candidates to one checker for the round check;
+3. received the counts and verdicts: 9 / 1 win, 5 / 3 not proven; 1b broke three tickets, so there was nothing to combine;
+4. had the winner filtered, then ordered the deletion from 1a and the re-check;
 5. answered the promotion questions and wrote the ledger and `state.md`;
 6. sent the user the show and started round 2.
 
-**Rounds 2 to 4.** A normal round and two wide ones. Nobody reached the threshold; the best result was 5 / 2. A second deletion gave a real break and was discarded. Stop.
+**Rounds 2 to 4.** A normal round and two wide ones. Nobody reached the threshold; the best result was 5 / 2, and no two candidates gained without breaking something, so nothing was combined. A second deletion gave a real break and was discarded. Stop.
 
 **Finish.** On the 30 held-out tickets: 26 against 21 for `v0`, better 6, worse 1. Discordant 7, the table needs 7. Outcome: same direction, not proven. The report says: "On the working panel, 50 of 60 against 44 on the fresh measurement; the win was proven and held. On the held-out tickets, 26 of 30 against 21: the same direction, but 30 examples do not prove it alone."
 
@@ -91,18 +91,20 @@ Size budget: 12 steps, the size of `v0`. The user fixed the approach: edit this 
 | 2a | copying in batches with a progress mark; closes C4 and C5 | C4 and C5 closed, nothing broken | the copy takes 3 h 10 min, not 40 min |
 | 2b | the index is built before the switch; closes C2 | C2 closed, nothing broken | none |
 
-Both won. 2a has the larger margin: two cases against one. The idea of 2b is recorded as an open hypothesis.
+Both won, on different cases, with nothing broken. A generator combines them into 2c: all five cases pass, 13 steps. The filter passes: every added step names the case it closes.
 
-Deletion from 2a: steps 7 to 9 struck out, manual checks that repeat the automatic one in step 6. 10 steps, down from 13.
+An attacker goes at 2c and gives two findings; neither is reproduced.
 
-Re-check: the check answers the same, so only the trimmed version is measured. C1, C3, C4 and C5 pass. An attacker gave two findings on it; neither was reproduced. The trimmed 2a is promoted provisionally: it changes what the engineer reads.
+Deletion from 2c: steps 7 to 9 struck out, manual checks that repeat the automatic one in step 6. 10 steps, down from 13.
+
+Re-check: the check answers the same, so only the trimmed version is measured. All five cases pass. The trimmed 2c is promoted provisionally: it changes what the engineer reads.
 
 **Show 1.** The user gets `best` and `v0` unlabelled, the list of what was added and removed, and the cost. The answer: "The second is clearer. Three hours of copying is fine, it will run at night. Put the check after step 6 back: I will not sign without it."
 
 - By the key the second one is `best`. It becomes `owner`.
-- The check after step 6 is restored and the version measured again: 11 steps, C1, C3, C4 and C5 pass. The user's decision is recorded verbatim in `decisions.md`.
+- The check after step 6 is restored and the version measured again: 11 steps, all five cases pass. The user's decision is recorded verbatim in `decisions.md`.
 
-**Round 2.** One failure is left, C2. A candidate with the open hypothesis of 2b closes it: all five cases pass. There is nothing more to remove. An attacker found nothing that reproduces. The promotion is provisional; there are no failures left, so the loop prepares the second show and waits.
+**Round 2.** Nothing fails. An attacker goes at `best` and finds nothing that reproduces. Only taste is left, so the loop stops and waits for the user.
 
 There is no statistics here: the cases are named and the check answers the same.
 

@@ -2,6 +2,8 @@
 
 Criteria are never blended into one score. A candidate wins on the round's criterion and must be no worse on every other criterion.
 
+The user's choice at a show stands above the measure, in every mode. The version they pick becomes the best version and the one they approved. What they say is wrong with it is the failure for the next round, and their words become checks only on their yes.
+
 Each criterion has one of three modes, named in the objective.
 
 ## Named cases
@@ -11,7 +13,7 @@ Named cases that must each hold, with a check that answers the same on a repeat.
 - A finding counts once it is reproduced by action: a run, a measurement, a lookup in the source. A second model's opinion does not count.
 - **Win:** at least one reproduced failing case now passes, and no case that passed before is broken.
 - **No worse:** no case that passed before is broken.
-- An attacker goes at the winner. A reproduced new finding cancels the win and joins the panel.
+- An attacker goes at the winner before it is promoted, in every round of a run that has a named-cases criterion, whatever the round's own criterion. A reproduced finding joins the panel and is measured on the best version and the winner alike. It cancels the win only when it breaks the winner and not the best version. A failure both share is work for the next round.
 - Nothing is re-measured, because the check answers the same. In the re-check only the trimmed version is measured.
 - A model may be the check when it compares a result with an expected answer and has passed the test of the measure (phase 1).
 
@@ -33,11 +35,11 @@ above 60: half, plus the square root, plus one half; round up
 
 - **Win:** `better` reaches the threshold.
 - **Worse:** `worse` reaches the threshold.
-- **Not proven means discarded.** A raw lead of a few examples is not a win.
+- **Not proven means not promoted.** A raw lead of a few examples is not a win. A candidate that gained and broke nothing is kept as an open hypothesis: several of them combined into one candidate can reach the threshold together.
 - **Pass or fail.** `better`: the candidate passes an example the best version fails. `worse`: the reverse.
 - **Magnitude** (a time, a score). `better` and `worse` count only when the difference exceeds the noise measured in phase 1. Versions are measured in alternating order. If `worse` reaches the threshold when the noise band is ignored, there is no win.
 - **One example, measured by an instrument.** Alternating pairs of runs serve as the examples.
-- **Re-check.** In a fresh measurement the winner must keep its direction: more `better` than `worse`. Report the fresh counts, never the first ones. If the measure answers the same on a repeat, the re-check of the pair is skipped.
+- **Re-check.** In a fresh measurement the winner must keep its direction: more `better` than `worse`. Report the fresh counts, never the first ones. If the measure answers the same on a repeat, the pair is not measured again: only the trimmed version is.
 - **A trimmed version is no worse than its parent** if there is no real break. Every example where it is worse is measured three more times for both. The parent failed even once: the example is unstable and does not count. The parent passed all three and the trimmed version failed even once: the break is real, and the trimmed version is discarded. If the measure answers the same on a repeat, any break is real.
 
 What the table can show:
@@ -48,7 +50,9 @@ What the table can show:
 | fixes 15%, breaks 5% | 60 / 100 | 29% / 54% |
 | equal to the best version | 60 | under 1% |
 
-A sample under 30 examples decides nothing: enlarge it or hand the criterion to the user. When the best version fails fewer than six examples on a criterion, nothing can win there any more: take another criterion or add harder examples.
+A sample under 30 examples decides nothing: enlarge it or hand the criterion to the user. When the best version fails fewer than six examples on a criterion, nothing can win there any more: take another criterion or add harder examples. When its failures fall into kinds of fewer than six each, no single idea can win: combine ideas that each did no harm, or build from scratch.
+
+A trimmed best version that is no worse than its parent replaces it without a win. That is a trim: it is recorded as one and does not count as a win anywhere.
 
 ## Taste
 
