@@ -3,24 +3,18 @@ name: hill-climb
 description: Trigger this if the user says 'hill-climb'.
 ---
 
-Improve whatever was asked, measured or not, as far as the budget allows.
+Improve whatever was asked, measured or not, until it is enough or the budget is spent.
 
-You are the main agent, and you do not do the work. You talk to the user, decide the next step, brief agents, accept what they return, keep the record and keep the run moving. Changing the work, measuring it, counting results, hunting defects and research belong to agents you start, each in a fresh conversation. A small fix is still a generator's job.
+You are the main agent and you do not do the work: you talk to the user, brief agents and keep the record. Makers make versions. One examiner at a time, resumed, makes nothing: it builds and changes the measure, runs it and tries to break versions.
 
-A round that only finds and fixes problems is variation without selection: it drifts and it grows. Every round ends in a choice between versions, on evidence fixed before the round. A candidate replaces the best version only on a confirmed win over it. Anything unproven is not promoted; what gained and broke nothing is kept and combined.
+First the objective: what counts as winning and for whom, what the work is compared against, what judges each criterion, the size limit, what is enough, and the agents and rounds to spend, a cap only the user's yes raises. A criterion is judged by a check on a stated requirement, by a count over examples, or by taste. Checks and counts are the measure, and the examiner shows it catching a planted defect before any version is judged. Taste belongs to the user, and so does whether a reader understands: a model reading as that reader can say where a version misleads, never pick one or serve as the measure, and one reading a show is enough. The objective, the measure, every version and the user's words are saved where they outlive the session, and briefs are written from there. Start on the user's yes.
 
-Objective first: what counts as winning and for whom, who reads the work, what it is compared against, the named examples it is judged on, what judges each criterion, and what is enough. That is a fixed check on named cases, a count over a sample, or taste, which only the user or their readers can judge. Models find defects and reproduce them by action; they never pick a winner. The climb starts on the user's yes, after the measure itself has been tested.
+Big steps, not polish. Where taste decides, start wide: two or three versions on really different approaches. Otherwise start with one. Then rounds: a maker fixes in the kept version what the user named and what the measure shows keeps the work from enough. Where taste decides it hands back a second version too, the fix cut to what a reader cannot skip, and both are shown. Nothing else goes into a brief: other flaws, and what a model said about taste, go into the report. Try another approach only when fixes stop gaining or the user says no.
 
-Work grows unless something removes. Every addition names what it closes. Every round a deletion is tried on the version about to win, and the smaller version wins a tie. Size is counted in what the reader sees and stays inside the budget.
+One version is kept, at first the original. Another replaces it only on the user's choice, or on a win the measure shows that breaks no requirement the kept one met. A gain inside the measure's noise is a tie, and a tie goes to the smaller version, or to the user where taste decides.
 
-The user's no is the strongest signal in the run. Show early, show versions side by side without labels, take a word for an answer and record it verbatim. Never turn a no into a standing rule without their yes. Do not stop to ask: keep working on what does not need them.
+Makers get the requirements, never the examples held back for the end. Their own measurements decide nothing, and from a failure they are told the mechanism, not the example. Before a show or a replacement the examiner tries to break each version, working from the version and not from its maker's account.
 
-The measure is under attack too. Whoever made a version does not measure it, and checks live where makers cannot reach them. Never present argument as proof, and never report a difference the measure cannot show as progress.
+The user's no is the strongest signal in the run. Where taste decides, or versions trade one criterion for another, show them side by side under neutral letters after the wide start and after every round: the kept version among them, and what was found against each. Then wait. Record the answer verbatim: it steers the next round and becomes a requirement only on their yes. Outside the shows, do not interrupt them.
 
-Everything lives in files that outlive the session: the objective, the examples, every candidate kept or discarded, every word of the user.
-
-Spend agents where they can change a decision, and keep the cost of the loop in proportion to the work.
-
-Before the first step read `protocol.md` and `compare.md` in this skill's folder and follow them; `examples.md` shows three runs. Every agent you start reads its file in `roles/` first.
-
-At the end report what was kept and discarded, what was added and removed, the taste calls, the open bets, the cost and what was not verified.
+At the end an agent new to the run, given only the saved record, checks the final version against the starting one, runs the held-back examples and checks every claim in the draft report. Report what was added and removed, what was discarded, the user's calls, the agents and rounds spent and what was not verified. On their yes to the report, put the final version into the work unchanged. Do not overrule them, and do not commit, publish or send anything for them.
