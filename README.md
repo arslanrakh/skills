@@ -13,7 +13,7 @@ anything gets removed.
 | Skill | Say | What it does |
 |---|---|---|
 | [to-explainer](skills/to-explainer/SKILL.md) | "to-explainer" | Makes a document about a system, idea or decision that people get at a glance and can retell. Pictures first, the business before the details, in the form the reader needs. |
-| [hill-climb](skills/hill-climb/SKILL.md) | "hill-climb" | Improves code, a UI or anything else in rounds. First you agree on the goal, what to compare against and who judges. Then some agents change the work, others look for real problems, and the best version stays. |
+| [hill-climb](skills/hill-climb/SKILL.md) | "hill-climb" | Improves code, a UI or anything else in rounds. First you agree on the goal, what to compare against, who judges and how many agents to spend. Then some agents make versions, another tries to break them, and the best version stays. Where taste decides, you pick from versions shown side by side. |
 | [to-skill](skills/to-skill/SKILL.md) | "to-skill" | Turns the way you work into a skill your agent can follow. If one line in your agent's instructions is enough, it gives you that instead. |
 | [ship-afk](skills/ship-afk/SKILL.md) | "ship-afk" | Finishes a change while you are away: not just merged, but seen working for its users. Anything only a person can do, it reports back. |
 
